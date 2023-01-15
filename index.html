@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Poppins:wght@500&family=Raleway&family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Merriweather', serif;
+            font-family: 'Poppins', sans-serif;
+            font-family: 'Raleway', sans-serif;
+            font-family: 'Roboto', sans-serif;
+        }
+        .header-parent-element {
+            background-color: rgb(255, 241, 199);
+        }
+        header {
+            max-width: 992px;
+            margin: auto;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+        }
+        .nav {
+            display: flex;
+        }
+        .brand {
+            margin: 20px;
+            padding: 20px;
+        }
+        .nav div {
+            margin: 20px;
+            padding: 20px;
+        }
+        .header-section {
+            text-align: center;
+            max-width: 576px;
+            margin: auto;
+            
+        }
+        p {
+            color: rgb(150, 157, 163);
+        }
+        .header-button {
+            color: white;
+            background-color: chocolate;
+            padding: 20px;
+            border-radius: 5px;
+            border: none;
+        }
+        .banner-image{
+            max-width: 992px;
+            margin: 50px auto;
+        }
+        .first-part{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+        }
+        .first-span {
+            color: rgb(150, 157, 163);
+        }
+        .third-span {
+            color: chocolate;
+        }
+        .second-section {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-row-gap: 20px;
+            grid-column-gap: 50px;
+            margin: 20px auto;
+            max-width: 992px;
+        }
+        .align-items-center {
+            display: flex;
+            align-items: center;
+        }
+        .third-section{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            max-width: 992px;
+            margin: 20px auto;
+            grid-column-gap: 50px;
+        }
+        .third-section h1 {
+            border-left: 10px solid orangered;
+            padding: 30px 10px;
+        }
+        .third-section > div > div {
+            margin: 30px;
+            padding: 0px 10px;
+            box-shadow: 0px 0px 10px gray;
+            border-radius: 10px;
+        }
+        .third-section-first-span {
+            font-size: 50px;
+        }
+        .fourth-section {
+            max-width: 992px;
+            margin: auto
+        }
+        .icons {
+            display: flex;
+            justify-content: space-between;
+        }
+        .icons div {
+            border: 1px solid orangered;
+            border-radius: 5px;
+            margin: 20px;
+            padding: 20px;
+            text-align: center;
+            transition-property: transform;
+            transition-duration: .5s;
+        }
+        .icons div:hover {
+            transform: scale(1.1);
+        }
+        .fivth-section {
+            text-align: center;
+        }
+        .fivth-section div {
+            display: flex;
+            justify-content: space-between;
+            max-width: 992px;
+            margin: auto;
+        }
+        .sixth-section {
+            max-width: 992px;
+            background-color: rgb(253, 207, 253);
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 5px;
+        }
+        .seventh-section {
+            color: white;
+            background-color: black;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .seventh-section input {
+            padding: 20px;
+            margin: 20px 0;
+            border: 1px solid orangered;
+            border-radius: 5px;
+            background-color: transparent;
+        }
+        .seventh-section button {
+            background-color: orangered;
+            color: white;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        @media only screen and (max-width:576px) {
+            .navbar {
+                flex-direction: column;
+            }
+            .nav {
+                flex-direction: column;
+            }
+            .brand {
+                margin: 0px 20px;
+                padding: 0px 20px;
+            }
+            .nav div {
+                margin: 5px 20px;
+                padding: 5px 20px;
+            }
+            .banner-image {
+                max-width: 100%;
+            }
+            .img {
+                width: 100%;
+            }
+            .first-part {
+                grid-template-columns: repeat(1, 1fr);
+            }
+            .second-section {
+                grid-template-columns: repeat(1, 1fr);
+            }
+            .third-section {
+                grid-template-columns: repeat(1, 1fr);
+            }
+            .img-div button {
+                display: block;
+                width: 100%
+            }
+            .icons {
+                flex-direction: column;
+                text-align: center;
+            }
+            .fivth-section div {
+                flex-direction: column;
+            }
+            .sponsors img {
+                max-width: 100px;
+                padding: 20px;
+                margin: 0 auto;
+            }
+            .seventh-section {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+        @media only screen and (min-width: 577px){
+            .img-div button {
+                position: relative;
+                bottom: 50px;
+                right: 50px;
+            }
+            .fivth-section {
+                margin-top: 100px;
+            }
+            .sixth-section {
+                margin-top: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header-parent-element">
+        <header>
+            <nav class="navbar">
+                <div class="brand">
+                    <h1>G3 Architects</h1>
+                </div>
+                <div class="nav">
+                    <div>Home</div>
+                    <div>About</div>
+                    <div>Contact Us</div>
+                    <div>Login</div>
+                </div>
+            </nav>
+            <section class="header-section">
+                <h1>Brand New Group of Architects</h1>
+                <p>here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even</p>
+                <button class="header-button">Explore More</button>
+            </section>
+            <img class="banner-image" src="banner.png" alt="">
+        </header>
+    </div>
+    <main>
+        <section class="second-section">
+            <div class="first-part">
+                <img class="img" src="team1.png" alt="">
+                <img class="img" src="team2.png" alt="">
+                <img class="img" src="team3.png" alt="">
+                <img class="img" src="team4.png" alt="">
+            </div>
+            <div class="align-items-center">
+                <div class="second-part">
+                    <h1><strong><span class="first-span">Quick list</span> <span class="second-span">of Our</span> <span class="third-span">Features</span></strong></h1>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even</p>
+                    <button class="header-button">Explore More</button>
+                </div>
+            </div>
+        </section>
+        <section class="third-section">
+            <div>
+                <h1>Features you will love & enjoy</h1>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even</p>
+                <div>
+                    <h6>Dexktop & Mobile Version</h6>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised...........</p>
+                </div>
+                <div>
+                    <h6>Drag & Drop Builder</h6>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised...........</p>
+                </div>
+                <div>
+                    <h6>Awesome Modern Design</h6>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised...........</p>
+                </div>
+                <div>
+                    <h6>Super Easy to Edit</h6>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised...........</p>
+                </div>
+            </div>
+            <div class="img-div">
+                <img class="img" src="architect.png" alt="">
+                <button class="header-button"><div class="third-section-first-span">10+Year</div> <span>Experience</span></button>
+            </div>
+        </section>
+        <section class="fourth-section">
+            <h1>Some Facts</h1>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
+            <dvi class="icons">
+                <div>
+                    <img src="icons/ribon.png" alt="">
+                    <h1>54</h1>
+                    <p>Awards Winnings</p>
+                </div>
+                <div>
+                    <img src="icons/projects.png" alt="">
+                    <h1>1458</h1>
+                    <p>Project Finished</p>
+                </div>
+                <div>
+                    <img src="icons/customers.png" alt="">
+                    <h1>590</h1>
+                    <p>Clients Worked</p>
+                </div>
+                <div>
+                    <img src="icons/email.png" alt="">
+                    <h1>22578</h1>
+                    <p>Email Send</p>
+                </div>
+            </dvi>
+        </section>
+        <section class="fivth-section">
+            <h1>Our Sponsors</h1>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
+            <div class="sponsors">
+                <img src="sponsors/spotify.png" alt="">
+                <img src="sponsors/amazon.png" alt="">
+                <img src="sponsors/google.png" alt="">
+                <img src="sponsors/telerama.png" alt="">
+                <img src="sponsors/figma.png" alt="">
+            </div>
+        </section>
+        <section class="sixth-section">
+            <p>All rights reserved copyright@2023 startup landing page design</p>
+        </section>
+        <section class="seventh-section">
+            <div>
+                <p>21, Revulation Street</p>
+                <h1>Paris, France</h1>
+                <h2>+1 555 123456</h2>
+            </div>
+            <div>
+                <h1>SUBSCRIBE US</h1>
+                <input type="email" name="" id="" placeholder="Enter Your Email Address">
+                <br>
+                <button>SUBSCRIBE</button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
